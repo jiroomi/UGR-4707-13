@@ -96,10 +96,7 @@ h1{
 hr{
     color: rgb(196, 194, 191);
 }
-hr:hover{
-    background-color: rgb(196, 194, 191);
-    color: rgb(230, 142, 11);
-}
+
 main{
     margin:-33px 10px 0px;
     padding: 10;
