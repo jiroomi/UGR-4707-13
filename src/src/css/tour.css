@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    
+}
+header{
+    
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0px;
+    padding: 10;
+}
+
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 30vh;
+    background-color: black;
+}
+
+div nav ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    
+    
+}
+ul li {list-style-type: None;
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 10px;
+    
+        
+}
+
+
+a:link{ color :white;
+    
+
+}
+
+a:visited{ color :rgb(151, 144, 141)
+
+}
+
+a:hover{ color :rgb(216, 216, 228);
+    text-decoration: underline;
+    background-color: rgb(243, 25, 25);
+
+}
+a:focus{
+    color :rgb(216, 64, 9)
+}
+a:active{ color :rgb(233, 71, 13)
+
+}
+a{
+    font-weight: 40px;
+}
+
+
+
+
+
+#logo-image{
+    position: absolute;
+    left: 24px;
+    top: 15px;
+     border: 3px solid rgb(186, 186, 199);
+    width: 10vw;
+    height: auto;
+}
+h1{
+    position: absolute;
+    left: 165px;
+    color:lightcoral;
+    text-transform: capitalize;
+    font-family: Bold;
+}
+
+
+
+
+
+main{
+    margin: 0px 10px;
+    padding: 10;
+    background-color: rgb(119, 105, 105)
+}
+.question h2{ 
+    margin: 30px;
+}
+
+.expanation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 50px ;
+    height: 30vh;
+    
+}
+
+.divcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 12px ;
+    
+
+}
+.visited{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5;
+    width: 200px;
+    height: auto;
+    color: rgb(21, 230, 202);
+   
+}
+
+.planToVisit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5;
+    width: 200px;
+    height: auto;
+    color: darksalmon;
+
+}
+
+.searchFor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5;
+    width: 180px;
+    height: auto;
+}
+
+.searchbutton form input{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(186, 250, 252);
+}
+.searchbutton form button {
+    color: crimson;
+    padding: 3px 12px;
+    background-color: rgb(8, 176, 182);
+    border-radius: 10px;
+}
+
+.searchFor div nav ul li a{
+    color: brown;
+}
+
+
+
+
+footer{
+    margin: -10px 10px 20px;
+    padding: 10px;
+    border:1px solid rgb(182, 164, 164);
+    background-color: lightgray;
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: black;
+}
+footer h5 ,p{
+    visibility: hidden;
+}
+
+
+
+.footer div nav ul li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: None;
+    padding: 10px 16px;
+    margin: 10px;
+    
+    
+}
+
+
+footer div img{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border-radius: 13px;
+    vertical-align: middle;
+}
+
+footer div nav ul li a img{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+span{
+    float: right;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    background-color: #7a5858;
+    color:white;
+    cursor: pointer;
+}
+
+

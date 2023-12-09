@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+hr{
+    color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.header div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 10%;
+    vertical-align: middle;
+    
+}
+div h1{
+    text-transform: capitalize;
+}
+header{
+    margin: 20px 10px 0px;
+    background-color: rgb(167, 106, 106);
+    height: 30vh;
+}
+
+a{
+text-decoration: none;
+color : coral}
+.header nav ul li {
+    list-style-type: None;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+        
+}
+
+
+a:link{ color :coral;
+    
+
+}
+
+a:visited{ color :red;
+
+}
+
+a:hover{ color :white;
+    text-decoration: underline;
+    background-color: black;
+
+}
+a:focus{
+    color :rgb(216, 64, 9)
+}
+a:active{ color :rgb(233, 71, 13)
+
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+   flex-wrap: wrap;
+    flex-direction: row;
+    align-self: flex-start;
+    padding: 10px;
+}
+
+#logo-image{
+    width: 10vw;
+    height: auto;
+}
+
+
+h1{
+    display: inline;
+    margin-left: 0;
+    margin-top: 0;
+    color:lightcoral;
+    text-align: left;
+
+}
+
+
+
+
+
+hr{
+    color: rgb(196, 194, 191);
+}
+hr:hover{
+    background-color: rgb(196, 194, 191);
+    color: rgb(230, 142, 11);
+}
+main{
+    margin:-33px 10px 0px;
+    padding: 10;
+    border: 1px  rgb(17, 7, 7);
+    background-color: rgb(119, 105, 105)
+}
+
+.main div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h5{
+    visibility: hidden;
+}
+
+
+h3,h4{
+    color : black;
+    text-align: center;
+}
+main p{
+    color: white;
+    margin: 15px;
+    padding: 20px;
+    font-size: medium;
+}
+
+
+.formClassName div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+h4+div p span{
+    color: rgb(0, 0, 0);
+}
+h4+div{
+    
+    text-align: left;
+    margin-left: 25px;
+    padding: 30px;
+    
+
+}
+form label{
+    background-color: chocolate;
+    color: black;
+    margin: 15px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    
+}
+form input{
+    margin: 15px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: chocolate;
+    border: 1px solid rgb(119, 105, 105);
+}
+
+footer{
+    margin: -33px 10px 20px;
+    padding: 10px;
+    border:1px solid black;
+    background-color: lightslategray;
+    list-style-type: none;
+}
+
+.footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+   
+}
+footer p {
+    visibility: hidden;
+}
+
+.footer div nav ul li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: None;
+    padding: 10px 16px;
+    margin: 10px;
+    
+    
+}
+
+
+footer div img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    font-weight: 60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 13px;
+    vertical-align: middle;
+}
+
+footer div nav ul li a img{
+    align-items: start;
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+span{
+    margin: 25px;
+    align-self: center;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+
+main div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    
+
+}
+main div img{
+    object-fit: cover;
+    width: 80vw;
+    height: 100vh;
+    margin: 10px;
+    align-self: center;
+    border-radius: 25px;
+}
+
+h5{
+    color: chocolate;
+    margin: 20px;
+}
+
+
+.footer div a{
+    text-decoration: none;
+    color: rgb(49, 43, 43);
+    font-weight: 50px;
+    font-style: bold;
+}
+h1{
+    position: relative;
+    left: 155px;
+    top: 65px;
+
+}
+#logo-image{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+.header div nav ul li a{
+    font-display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
