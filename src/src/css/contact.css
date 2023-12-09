@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+   
+}
+.header{
+    display: grid;
+    grid-template-rows: 200px 200px auto;
+    justify-content: space-around;
+    background-color: coral;
+}
+#logo-image{
+  display: grid;
+  margin: 10px;
+  width: 10%;
+  height: 10%;
+  align-items: start;
+  border-radius: 5px;
+}
+
+ 
+  /* Navigation styles */
+  .header div nav ul li{
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  /* Main content styles */
+  .main {
+    background-color:grey;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Contact form styles */
+  .formClassName {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  /* Footer styles */
+  .footer {
+    display: grid;
+    color: black;
+    grid-template-columns: 2fr 1fr;
+    background-color: lightslategray;
+    padding: 20px;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-around;
+    justify-items: start;
+    align-items: start;
+ 
+  }
+  .footer img{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 90vw;
+    border-radius:10px;
+
+  }
+  .footer div nav ul li a img{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    vertical-align: middle;
+    
+
+  }
+  .footer div a img{
+    margin: 10px 500px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+
+  }
+  aside p span{
+    background-color: rgb(163, 163, 173);
+    color: black;
+    width: 100px;
+    border-radius: 5px;
+    justify-content: center;
+    float: center;
+    
+  }
+  form{display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 90vw;
+    background-color: black;
+  }
+
+  header main footer {
+    padding: 10px;
+
+    @media (min-width: 600px){
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 600px) {
+  aside {
+      grid-area: 1;
+      height: auto;
+      background-color:palevioletred;
+      color: white ;
+      margin: 0 10px;
+      border-radius: 15px;
+      text-align: center;
+  }
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .container{
+    display: grid;
+    margin-right: 0;
+    margin-left: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #311717;
+    color: white;
+  }
+
+  #logo-image{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 10px;
+    width: 5%;
+    height: 5%;
+    border-radius: 5px;
+    vertical-align: middle;
+ }
+.main,hr {
+    display: grid;
+    margin: 0 45px 0 40px;
+    grid-template-columns: 2fr 1fr;
+    background-color: grey;
+  }
+  
+  main p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  h3 {
+    
+    font-size: 20px;
+    font-weight: 500;
+    color: #311717;
+    overflow: hidden;
+    text-align: center;
+
+  }
+  h5,footer p{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    overflow: hidden;
+    text-align: start;
+
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 45px 0 40px;
+    justify-content: space-around;
+    background-color: dimgray;
+    
+  }
+  span,strong{
+    font-size: 20px;
+    font-weight: 500;
+    color:#9e9e19;
+    overflow: hidden;
+    text-align: center;
+  }
+  footer nav ul li a img{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    vertical-align: middle;
+    
+  }
+  footer nav ul li a{
+    color: darksalmon;
+    vertical-align:middle;
+  }
+  footer div a img{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+  }
+  footer div a{
+    color: black;
+    font-style: bold;
+    vertical-align:middle;
+    
+  }
+
+  span{
+    align-items: center;
+  }
+  .header div {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+  }
+  header main footer {
+    padding: 10px;
+
+    @media (min-width: 600px){
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+  aside {
+      grid-area: 1;
+      height: auto;
+      background-color:palevioletred;
+      color: white ;
+      margin: 0 10px;
+      border-radius: 15px;
+      text-align: center;
+  }
+}
