@@ -11,15 +11,16 @@
 <body>
         
     <header>
-        <div class="header">
-            <section>
+        <section>
+            <div class="heder">
                 <div>
-                    <h1>AboutSelf</h1>
-                <div id="header">
-                    <div class="">
-        
-                        <nav>
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
+                    <div class="container">
+                        <div class="logo">
+                            <img id="logo-image" src="image/logo.png" alt="Logo of website">
+                            <h1>AboutSelf</h1>
+                            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                        </div>
+                        <nav class="navbar">
                             
                             <ul>
                                 <li><a href="index.html">Home</a></li>
@@ -29,17 +30,19 @@
                                 <li><a href="hobby.html">Hobby</a></li>
                                 <li><a href="tour.html">Tour</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
+                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
                             </ul>
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                            
                         
                         </nav>
                     </div>
                 </div>
-                <hr>
-                </div>
-            </section>
-        </div>
-            
-            
+            </div>
+        </section>
+       
+    </header>
+    <hr>       
     </header>
     <main>
         

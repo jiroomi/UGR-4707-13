@@ -5,52 +5,108 @@
 
     
 }
+
+
+
+
+
+
 header{
-    
-    justify-content: center;
-    align-items: center;
-    margin: 10px 10px 0px;
-    padding: 10;
+    font-family:sans-serif;
+    font-size: medium;
+    margin: 10px 10px 0px 10px;
+    border: 1px solid rgb(119, 105, 105);
+    background-color: rgb(119, 105, 105);
+    width: 100%;
+    height: 35vh;
+}
+header:hover{
+    background: black;
+    color: white;
+    transform: background-color 0.8s;
 }
 
 
-.header{
+.container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    height: 30vh;
-    background-color: black;
 }
-
-div nav ul li a{
-    list-style-type: none;
+ a{
     text-decoration: none;
     
     
 }
-ul li {list-style-type: None;
+header div nav ul li {
+    list-style-type: None;
     display: inline-block;
     padding: 10px 16px;
-    margin: 10px;
-    
+    margin: 25px 10px 15px;
+    border-radius: 10px;
         
 }
+div.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+    
+}
 
 
-a:link{ color :white;
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+   flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 15%;
+    padding: 10px;
+}
+#logo-image{
+    width: 10vw;
+    height: auto;
+}
+h1{
+    color:lightcoral;
+    text-align: left;
+    
+}
+
+
+h1{
+    position: relative;
+    left: 35px;
+    top: 34px;
+    cursor: pointer;
+}
+h1:hover{
+    color: white;
+}
+#logo-image{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+a:link{ 
+    color :white;
     
 
 }
 
-a:visited{ color :rgb(151, 144, 141)
+a:visited{ 
+    color :rgb(151, 144, 141)
 
 }
 
-a:hover{ color :rgb(216, 216, 228);
+a:hover{
+     color :white;
     text-decoration: underline;
-    background-color: rgb(243, 25, 25);
+    background:#7a5858;
 
 }
 a:focus{
@@ -59,29 +115,14 @@ a:focus{
 a:active{ color :rgb(233, 71, 13)
 
 }
-a{
-    font-weight: 40px;
-}
 
 
 
 
 
-#logo-image{
-    position: absolute;
-    left: 24px;
-    top: 15px;
-     border: 3px solid rgb(186, 186, 199);
-    width: 10vw;
-    height: auto;
-}
-h1{
-    position: absolute;
-    left: 165px;
-    color:lightcoral;
-    text-transform: capitalize;
-    font-family: Bold;
-}
+
+
+
 
 
 
@@ -90,11 +131,37 @@ h1{
 main{
     margin: 0px 10px;
     padding: 10;
-    background-color: rgb(119, 105, 105)
+    background-color: rgb(119, 105, 105);
+    width: 100%;
 }
+main:hover{ 
+    color:white;
+    background: #7a5858;
+    transform: translateY(-10px);
+}
+h2:hover{
+    color:white;
+    background: black;
+}
+h2{
+    color: black;
+}
+em{
+    color: chocolate;
+}
+em:hover{
+    text-decoration: underline;
+}
+    
 .question h2{ 
     margin: 30px;
 }
+main ul li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+
 
 .expanation{
     display: flex;
@@ -123,11 +190,16 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    flex-basis: 30%;
     margin: 5;
     width: 200px;
     height: auto;
     color: rgb(21, 230, 202);
    
+}
+.visited:hover{
+    color:white;
+    transform: translateY(-5px);
 }
 
 .planToVisit{
@@ -136,11 +208,16 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    flex-basis: 30%;
     margin: 5;
     width: 200px;
     height: auto;
     color: darksalmon;
 
+}
+.planToVisit:hover{
+    color:white;
+    transform: translateY(-5px);
 }
 
 .searchFor{
@@ -149,9 +226,14 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    flex-basis: 30%;
     margin: 5;
     width: 180px;
     height: auto;
+}
+.searchFor:hover{
+    color:white;
+    transform: translateY(-5px);
 }
 
 .searchbutton form input{
@@ -167,15 +249,19 @@ main{
 }
 
 .searchFor div nav ul li a{
-    color: brown;
+    color: white;
 }
-
+.searchPlace ul li a:hover{
+    color: white;
+    transform: translateY(-5px);
+}
 
 
 
 footer{
     margin: -10px 10px 20px;
     padding: 10px;
+    width: 100%;
     border:1px solid rgb(182, 164, 164);
     background-color: lightgray;
     list-style-type: none;
@@ -191,6 +277,11 @@ footer{
 }
 footer h5 ,p{
     visibility: hidden;
+}
+footer:hover {
+    background: #7a5858;
+    transform: translateY(-5px);
+
 }
 
 
@@ -232,3 +323,128 @@ span{
 }
 
 
+
+
+
+
+
+
+
+
+/* -----media queries css section for each devices---- */
+
+
+
+
+
+
+
+
+
+
+/* ----for mobile---- */
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    *{
+        background-color: #fff0;
+        color: #fff;
+    }
+    body {
+      font-size: 14px;
+     
+    }
+    header> div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header h1{
+        margin: 0;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+    }
+    .menu-icon{
+        color:white;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        cursor: pointer;
+    }
+    .menu-icon:hover{
+        color: red;
+    }
+    h1{
+        position: relative;
+        left: 0;
+        top: 25px;
+        cursor: pointer;
+    }
+    h1:hover{
+        color: white;
+    }
+    #logo-image{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+    }
+  }
+    
+
+
+
+
+  /* ----- for mobile portrait ------- */
+  @media only screen and (max-width: 479px) {
+    *{
+        color: black ;
+        background: white;
+    }
+
+.menu-icon{
+    display: none;
+}
+
+    
+  }
+
+
+
+
+
+
+
+
+
+  /* -------style for the tablet  */
+
+
+ @media only screen and (min-width:768px) and (max-width:991px){
+    .menu-icon{
+        color:white;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        cursor: pointer;
+    }
+    .menu-icon:hover{
+        color: red;
+    }
+body{
+    font-size: 16px;
+    color: white;
+    background: #7a5858;
+}
+ }
+
+
+/* ----- for the laptop and desktop browsers------  */
+@media only screen and (min-width:992px){
+    .menu-icon{
+        display: none;
+    }
+
+}

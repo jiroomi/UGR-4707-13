@@ -10,40 +10,38 @@
 </head>
 <body>
     
-        <!-- header part -->
-        <header>
-            
-           <div>
-            <section>
-                <h1>AboutSelf</h1>
-                <div id="header">
+    <header>
+        <section>
+            <div class="heder">
+                <div>
+                    <div class="container">
                         <div class="logo">
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
+                            <img id="logo-image" src="image/logo.png" alt="Logo of website">
+                            <h1>AboutSelf</h1>
+                            <label for="menu-toggle" class="menu-icon">&#9776;</label>
                         </div>
-                        <div>
-                            <nav>
+                        <nav class="navbar">
                             
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a href="myskill.html">MySkill</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                   
-                                    <li><a href="hobby.html">Hobby</a></li>
-                                    <li><a href="tour.html">Tour</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            
-                            </nav>
-                        </div>
-                       
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="history.html">History</a></li>
+                                <li><a href="myskill.html">MySkill</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="hobby.html">Hobby</a></li>
+                                <li><a href="tour.html">Tour</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
+                            </ul>
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                        
+                        </nav>
+                    </div>
                 </div>
-            </section>
-           </div>
-        </header>
-        <!-- about part -->
-        <hr>
-        <!-- I have shown my educational background and languagues by using table -->
+            </div>
+        </section>
+       
+    </header>
+    <hr> 
     <main>
         <div class="main">
             <section>
@@ -53,7 +51,7 @@
                 <div>
                     <p>I have different skills:   <em>like</em> <strong>knowledge-based skills</strong> and <strong>soft skills</strong></p>
                 </div>
-                <div>
+                <div class="table">
                     <table>
                           <tr>
                             <th>Language skills</th>
@@ -95,7 +93,7 @@
     
                 </div>
     
-                <div>
+                <div class="table">
                     <h4>educational background</h4>
                     <table>
                         <tr>
@@ -151,18 +149,20 @@
                 <!-- computer skill -->
                 
                 <section>
-                    <h3>Computer program skill </h3>
-                    <div>   
-                        <p>I acquired computer programming <span>skills.</span></p>
-                        <p>The followings are my list of them:</p>
-                        <ul>
-                            <li>UI/Ux design</li>
-                            <li>Web development</li>
-                            <li>Python Programming</li>
-                            <li>Java object oreinted programming</li>
-                            <li>relational database </li>
-                        </ul>
+                    <div class="computerSkill">
+                        <h3>Computer program skill </h3>
+                        <div class="comp-skill">   
+                             <p>I acquired computer programming <span>skills.</span></p>
+                             <p>The followings are my list of them:</p>
+                             <ul>
+                                 <li>UI/Ux design</li>
+                                 <li>Web development</li>
+                                 <li>Python Programming</li>
+                                 <li>Java object oreinted programming</li>
+                                 <li>relational database </li>
+                             </ul>
                        
+                        </div>
                     </div>
              
                  

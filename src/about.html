@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/css/about.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="<KEY>" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fontawesome.com/v5/icons/js?f=brands&s=solid">
     <title>AboutSelf</title>
 </head>
 <body>
     <header>
         <section>
-            <h1>AboutSelf</h1>
             <div class="heder">
                 <div>
                     <div class="container">
                         <div class="logo">
                             <img id="logo-image" src="image/logo.png" alt="Logo of website">
+                            <h1>AboutSelf</h1>
+                            <label for="menu-toggle" class="menu-icon">&#9776;</label>
                         </div>
-                        <nav>
+                        <nav class="navbar">
                             
                             <ul>
                                 <li><a href="index.html">Home</a></li>
@@ -28,7 +30,9 @@
                                 <li><a href="hobby.html">Hobby</a></li>
                                 <li><a href="tour.html">Tour</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
+                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
                             </ul>
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                         
                         </nav>
                     </div>

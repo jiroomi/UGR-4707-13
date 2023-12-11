@@ -4,61 +4,107 @@
     padding: 0;
     
 }
+
+
+
+
+
 header{
-    margin: 10px 10px 0px;
-    padding: 10;
-    border: 1px solid black;
+    font-family:sans-serif;
+    font-size: medium;
+    margin: 10px 10px 0px 10px;
     background-color: rgb(119, 105, 105);
-    height:30vh;
+    width: 100%;
+    height: 35vh;
 }
-.header div{
+header:hover{
+    background: black;
+    color: white;
+}
+
+
+.container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-basis:100%;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    height: 30vh;
-    background-color: black;
 }
-a{
+ a{
     text-decoration: none;
     
     
 }
-ul li {list-style-type: None;
-    display: inline-block;
-    padding: 10px 16px;
-    margin: 10px;
-    
-    
-        
-}
-
-.header div nav{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    align-self: flex-end;
-}
-
-
-
-footer div ul li a{
+header div nav ul li {
     list-style-type: None;
     display: inline-block;
     padding: 10px 16px;
-    margin: 10px;
+    margin: 25px 10px 15px;
+    border-radius: 10px;
+        
 }
 
-a:visited{ color :rgb(151, 144, 141)
+div.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+    
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+   flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 15%;
+    padding: 10px;
+}
+#logo-image{
+    width: 10vw;
+    height: auto;
+}
+h1{
+    color:lightcoral;
+    text-align: left;
+    
+}
+
+
+h1{
+    position: relative;
+    left: 45px;
+    top: 45px;
+    cursor: pointer;
+}
+h1:hover{
+    color: white;
+}
+#logo-image{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+a:link{ 
+    color :white;
+    
 
 }
 
-a:hover{ color :rgb(216, 216, 228);
+a:visited{ 
+    color :rgb(151, 144, 141)
+
+}
+
+a:hover{
+     color :white;
     text-decoration: underline;
-    background-color: rgb(243, 25, 25);
+    background:#7a5858;
 
 }
 a:focus{
@@ -67,69 +113,53 @@ a:focus{
 a:active{ color :rgb(233, 71, 13)
 
 }
-a{
-    font-weight: 40px;
-}
 
 
 
 
 
-#logo-image{
-    position: absolute;
-    left: 24px;
-    top: 15px;
-    border: 3px solid rgb(186, 186, 199);
-    width: 10vw;
-    height: auto;
-}
-h1{
-    position: absolute;
-    left: 165px;
-    top: 55px;
-    color:lightcoral;
-    text-transform: capitalize;
-    font-family: Bold;
-}
 
 
 
 
 
-main{
+
+
+main div{
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 10px;
     margin-right: 10px;
+    width: 100%;
     padding: 10;
     border: 1px solid black;
     background-color: rgb(119, 105, 105)
 }
-
-
-
-
-
-
-
-
-footer{
-    margin: 0px 10px 20px;
-    padding: 10px;
-    border:1px solid black;
-    background-color: lightslategray;
-    list-style-type: none;
-}
-
-
 h2{
     margin: 50px;
     color: white;
 
 }
+h2:hover{
+    color: #7a5858;
+    background: white;
+    border-radius: 10px;
+}
+.main div img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
 .main img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 96%;
+    height: auto;
+    margin: 20px;
     border-radius: 37px;
+}
+.main img:hover{
+    background: #7a5858;
+    transform: translateY(-5px);
 }
 .main p{
     font-family: Arial, Helvetica, sans-serif;
@@ -139,17 +169,44 @@ h2{
 }
 
 
-.footer div nav ul li{
+
+footer div{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    
+}
+
+
+
+
+
+footer{
+    
+    margin: 0px 10px 20px;
+    width: 100%;
+    height: auto;
+    border:1px solid black;
+    background-color: lightslategray;
+    list-style-type: none;
+}
+
+
+
+footer :hover{
+    background: #7a5858;
+    transform: translateY(-10px);
+}
+
+
+
+footer ul li {
     list-style-type: None;
+    display: inline-block;
     padding: 10px 16px;
     margin: 10px;
-    
-    
 }
 footer a{
     color: black;
@@ -194,3 +251,234 @@ h5{
 
 
 
+
+
+
+
+
+
+/* -----media queries css section for each devices---- */
+
+
+
+
+
+
+
+
+
+
+/* ----for mobile---- */
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    *{
+        background-color: #fff0;
+        color: #fff;
+    }
+    body {
+      font-size: 14px;
+     
+    }
+    header> div{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    header h1{
+        margin: 0;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+    }
+    .main >div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+       
+    
+    }
+    h1:hover{
+        color: white;
+        
+
+    }
+    .logo div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+    }
+    h1{
+        position: relative;
+        left: 0;
+        top: 25px;
+        cursor: pointer;
+    }
+    h1:hover{
+        color: white;
+    }
+    #logo-image{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+  
+    .navbar{
+        display: none;
+        
+    }
+   
+    .menu-icon{
+        color:white;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        cursor: pointer;
+    }
+    .menu-icon:hover{
+        color: red;
+    }
+   .main img{
+    margin: 10px;
+   }
+   main,footer{
+    background: black ;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+   h5{
+    color:white;
+   }
+   
+    
+  }
+    
+
+
+
+
+  /* ----- for mobile portrait ------- */
+  @media only screen and (max-width: 479px) {
+    *{
+        color: black ;
+        background: white;
+    }
+
+
+.menu-icon{
+    display: none;
+}
+body{
+    font-size: 10px;
+    background: white;
+    color: lightblue ;
+}
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  /* -------style for the tablet  */
+
+
+ @media only screen and (min-width:768px) and (max-width:991px){
+    *{
+        background-color: #fff0;
+        color: #fff;
+    }
+    body {
+      font-size: 14px;
+      background: #7a5858;
+      color: white;
+     
+    }
+    header> div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header h1{
+        margin: 0;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    
+    }
+    h1:hover{
+        color: white;
+        
+
+    }
+    .logo div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+    }
+
+
+    h1{
+        position: relative;
+        top: 20px;
+        left: 0;
+        align-self: flex-start;
+    }
+    .navbar{
+        display: none;
+        
+    }
+   
+    .menu-icon{
+        color:white;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        cursor: pointer;
+    }
+    .menu-icon:hover{
+        color: red;
+    }
+  }
+
+ 
+
+
+/* ----- for the laptop and desktop browsers------  */
+@media only screen and (min-width:992px){
+    .menu-icon{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+/* ----since I will make responsive for mobile 
+,mobile portrait and tablet on this home page design for
+ mobile,mobile portrait,and tablet the left pages 
+ are assumed unnecessary I belive
+ 
+ but they are all  made responsive
+ ----  */

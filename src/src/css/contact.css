@@ -4,58 +4,105 @@
     padding: 0;
     
 }
-hr{
-    color: lightgray;
-    margin: 0;
-    padding: 0;
+
+
+
+header{
+    font-family:sans-serif;
+    font-size: medium;
+    margin: 10px 10px 0px 10px;
+    border: 1px solid rgb(119, 105, 105);
+    background-color: rgb(119, 105, 105);
+    width: 100%;
+    height: 35vh;
+}
+header:hover{
+    background: black;
+    color: white;
+    transform: background-color 0.8s;
 }
 
 
-
-
-.header div{
+.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    height: 10%;
-    vertical-align: middle;
+}
+ a{
+    text-decoration: none;
+    
     
 }
-div h1{
-    text-transform: capitalize;
-}
-header{
-    margin: 20px 10px 0px;
-    background-color: rgb(167, 106, 106);
-    height: 30vh;
-}
-
-a{
-text-decoration: none;
-color : coral}
-.header nav ul li {
+header div nav ul li {
     list-style-type: None;
     display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 10px 16px;
+    margin: 25px 10px 15px;
+    border-radius: 10px;
         
+}
+div.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+    
 }
 
 
-a:link{ color :coral;
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+   flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 15%;
+    padding: 10px;
+}
+#logo-image{
+    width: 10vw;
+    height: auto;
+}
+h1{
+    color:lightcoral;
+    text-align: left;
+    
+}
+
+
+h1{
+    position: relative;
+    left: -10px;
+    top: 34px;
+    cursor: pointer;
+}
+h1:hover{
+    color: white;
+}
+#logo-image{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+a:link{ 
+    color :white;
     
 
 }
 
-a:visited{ color :red;
+a:visited{ 
+    color :rgb(151, 144, 141)
 
 }
 
-a:hover{ color :white;
+a:hover{
+     color :white;
     text-decoration: underline;
-    background-color: black;
+    background:#7a5858;
 
 }
 a:focus{
@@ -65,29 +112,11 @@ a:active{ color :rgb(233, 71, 13)
 
 }
 
-.logo{
-    display: flex;
-    justify-content: flex-start;
-   flex-wrap: wrap;
-    flex-direction: row;
-    align-self: flex-start;
-    padding: 10px;
-}
-
-#logo-image{
-    width: 10vw;
-    height: auto;
-}
 
 
-h1{
-    display: inline;
-    margin-left: 0;
-    margin-top: 0;
-    color:lightcoral;
-    text-align: left;
 
-}
+
+
 
 
 
@@ -101,7 +130,16 @@ main{
     margin:-33px 10px 0px;
     padding: 10;
     border: 1px  rgb(17, 7, 7);
-    background-color: rgb(119, 105, 105)
+    background-color: rgb(119, 105, 105);
+    width: 100%;
+}
+main:hover{
+    background: #7a5858;
+    color: #fff;
+    transform: translateY(-5px);
+}
+#Phot:hover{
+    transform: translateY(-10px);
 }
 
 .main div{
@@ -169,6 +207,7 @@ footer{
     border:1px solid black;
     background-color: lightslategray;
     list-style-type: none;
+    width: 100%;
 }
 
 .footer div {
@@ -194,6 +233,11 @@ footer p {
     margin: 10px;
     
     
+}
+footer:hover{
+    background: #7a5858;
+    color: #fff;
+    transform: translateY(-5px);
 }
 
 
@@ -257,22 +301,126 @@ h5{
     font-weight: 50px;
     font-style: bold;
 }
-h1{
-    position: relative;
-    left: 155px;
-    top: 65px;
-
-}
-#logo-image{
-    position: absolute;
-    left: 20px;
-    top: 30px;
-}
-.header div nav ul li a{
-    font-display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
 
+
+
+
+
+
+
+
+
+
+/* -----media queries css section for each devices---- */
+
+
+
+
+
+
+
+
+
+
+/* ----for mobile---- */
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    *{
+        background-color: #fff0;
+        color: #fff;
+    }
+    body {
+      font-size: 14px;
+     
+    }
+    header> div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header h1{
+        margin: 0;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+    }
+    h1:hover{
+        color: white;
+
+    }
+    .navbar{
+        display: none;
+        
+    }
+   
+    .menu-icon{
+        color:white;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        cursor: pointer;
+    }
+    .menu-icon:hover{
+        color: red;
+    }
+    main #Phot{
+        margin: 0px 10px;
+    }
+  }
+    
+
+
+
+
+  /* ----- for mobile portrait ------- */
+  @media only screen and (max-width: 479px) {
+    *{
+        color: black ;
+        background: white;
+    }
+    .menu-icon{
+        display: none;
+    }
+
+
+
+    
+  }
+
+
+
+
+
+
+
+
+
+  /* -------style for the tablet  */
+
+
+ @media only screen and (min-width:768px) and (max-width:991px){
+    .navbar{
+        display: none;
+        
+    }
+   
+    .menu-icon{
+        color:white;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        cursor: pointer;
+    }
+    .menu-icon:hover{
+        color: red;
+    }
+
+ }
+
+
+/* ----- for the laptop and desktop browsers------  */
+@media only screen and (min-width:992px){
+.menu-icon{
+    display: none;
+}
+}
