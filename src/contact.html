@@ -10,37 +10,36 @@
 </head>
 <body>
     <header>
-        <section>
-            <div class="heder">
-                <div>
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png" alt="Logo of website">
+        <section class="section-of-header">
+            <div class="header">
+                <nav class="navbar">
+                    <div class="navbar-logo">
+                      <img id="logo-image" src="image/logo.png" alt="Logo of website">
                             <h1>AboutSelf</h1>
-                            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                        </div>
-                        <nav class="navbar">
-                            
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
-                            </ul>
-                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                        
-                        </nav>
                     </div>
-                </div>
+                    <ul class="navbar-menu">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="myskill.html">MySkill</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="hobby.html">Hobby</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                      
+                    </ul>
+                    <div class="navbar-toggle">
+                        <label class="menu-icon" onclick="toggleMenu()">&#9776;</label>
+                    </div>
+                  </nav>
+
+
             </div>
         </section>
        
     </header>
-    <hr> 
+    <hr>       
+    </header>
     <main>
         <!-- above is header part -->
         <div class="main">
@@ -61,17 +60,25 @@
                 <h4>Will you come to our home?</h4>
                 <div class="formClass"><p><span>Create account</span><br>Sign in<span></span></p>
     
-                    <div id="form">
-                        <form action="/action_page.php">
-                            <label for="name">Full Name:</label><br>
-                            <input type="text" id="name" name="Name" value="Write your Name"><br>
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="Email" value="Write your Email"><br><br>
-                            <label for="comment">CommentLine</label><br>
-                            <input type="text" id="comment" name="Comment" value="leave your comment here">
-                            <input type="submit" value="Submit">
-                        </form>
+                 
+
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                          
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                          
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          
+                            <button type="submit">Submit</button>
+                          </form>
                     </div>
+
+
+
                     <div id="Phot">
                         <img src="image/contactPhoto.jpg" alt="beautifu house photo" width="700">
     
@@ -123,5 +130,6 @@
             </section>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

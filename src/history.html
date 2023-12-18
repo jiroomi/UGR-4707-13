@@ -6,47 +6,47 @@
     <link rel="stylesheet" href="https://www.flaticon.com/free-icon/like_880605">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="<KEY>" crossorigin="anonymous">
         <link rel="stylesheet" href="src/css/history.css">
+        
   
     <title>aboutself</title>
 </head>
 <body>
     <header>
-        <section>
-            <div class="heder">
-                <div>
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png" alt="Logo of website">
+        <section class="section-of-header">
+            <div class="header">
+                <nav class="navbar">
+                    <div class="navbar-logo">
+                      <img id="logo-image" src="image/logo.png" alt="Logo of website">
                             <h1>AboutSelf</h1>
-                            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                        </div>
-                        <nav class="navbar">
-                            
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
-                            </ul>
-                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                        
-                        </nav>
                     </div>
-                </div>
+                    <ul class="navbar-menu">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="myskill.html">MySkill</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="hobby.html">Hobby</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                      
+                    </ul>
+                    <div class="navbar-toggle">
+                        <label class="menu-icon" onclick="toggleMenu()">&#9776;</label>
+                    </div>
+                  </nav>
+
+
             </div>
         </section>
        
+    </header>    
     </header>
     <hr> 
     <main>
        <div class="main">
         <section>
             <div>
-                <h1>This is history topic </h1>
+                <h2 class="title">This is history topic </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci aperiam, 
                 fugiat velit amet temporibus ipsum animi nemo eum voluptatem
                  quidem illum tempore assumenda saepe id eaque aliquid. Voluptates, hic.
@@ -114,5 +114,6 @@
             </section>
         </div>
     </footer>
+<script src="script.js" async></script>
 </body>
 </html>
