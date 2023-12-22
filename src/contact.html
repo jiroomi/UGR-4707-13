@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="https://tailwindcss.com/.css">
+
     <title>AboutSelf</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <section>
-                <h1 class="logo-text"> ABOUTSELF</h1>
-                <div >
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
-                            
+    <header class="bg-slate-500">
+        <section>
+           
+            <div class="md:flex justify-between content-center row">
+                <div class="md:flex-row justify-between items-center">
+                    <div class="container flex-1 ">
+                        <div class="md:flex">
+                            <figure>
+                                <img id="logo-" src="image/logo.png" alt="Logo of website" class="!place-items-start max-w-00.12 h-1" >
+                            </figure>
+                            <figcaption><h1 class="text-justify hover:transition-colors-slate-500 cursor-pointer  text-yellow-700">AboutSelf</h1></figcaption>
                         </div>
-                        <nav>
+                        <nav class="md:grid bg-gray-800 flex-row items-center justify-between h-16 inline-block text-justify">
                             
-                            <ul>
+                            <ul class="font-sans">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="history.html">History</a></li>
                                 <li><a href="myskill.html">MySkill</a></li>
                                 <li><a href="about.html">About</a></li>
-                               
                                 <li><a href="hobby.html">Hobby</a></li>
                                 <li><a href="tour.html">Tour</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
@@ -32,10 +36,11 @@
                         </nav>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+       
     </header>
-    <hr>
+    <hr> 
     <main>
         <!-- above is header part -->
         <div class="main">
@@ -53,19 +58,22 @@
             </section>  <hr>
           
             <section>
-                <h4>Will you come to our home?</h4>
+                <h4 class="text-center border-l-slate-700">Will you come to our home?</h4>
                 <div class="formClass"><p><span>Create account</span><br>Sign in<span></span></p>
     
-                    <div id="form">
-                        <form action="/action_page.php">
-                            <label for="name">Full Name:</label><br>
-                            <input type="text" id="name" name="Name" value="Write your Name"><br>
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="Email" value="Write your Email"><br><br>
-                            <label for="comment">CommentLine</label><br>
-                            <input type="text" id="comment" name="Comment" value="leave your comment here">
-                            <input type="submit" value="Submit">
-                        </form>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required class="bg-slate-700">
+                          
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required class="bg-slate-700">
+                          
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required class="bg-slate-700"></textarea>
+                          
+                            <button type="submit">Submit</button>
+                          </form>
                     </div>
                     <div id="Phot">
                         <img src="image/contactPhoto.jpg" alt="beautifu house photo" width="700">
@@ -118,5 +126,6 @@
             </section>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

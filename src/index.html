@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="https://tailwindcss.com/.css">
+
     <title>AboutSelf</title>
 </head>
 <body>
-        
-    <header>
-        <div class="header">
-            <section>
-                <div>
-                    <h1>AboutSelf</h1>
-                <div id="header">
-                    <div class="">
-        
-                        <nav>
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
+    <header class="bg-slate-500">
+        <section>
+           
+            <div class="md:flex justify-between content-center row">
+                <div class="md:flex-row justify-between items-center">
+                    <div class="container flex-1 ">
+                        <div class="md:flex">
+                            <figure>
+                                <img id="logo-" src="image/logo.png" alt="Logo of website" class="!place-items-start max-w-00.12 h-1" >
+                            </figure>
+                            <figcaption><h1 class="text-justify hover:transition-colors-slate-500 cursor-pointer  text-yellow-700">AboutSelf</h1></figcaption>
+                        </div>
+                        <nav class="md:grid bg-gray-800 flex-row items-center justify-between h-16 inline-block text-justify">
                             
-                            <ul>
+                            <ul class="font-sans">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="history.html">History</a></li>
                                 <li><a href="myskill.html">MySkill</a></li>
@@ -31,13 +36,11 @@
                         </nav>
                     </div>
                 </div>
-                <hr>
-                </div>
-            </section>
-        </div>
-            
-            
+            </div>
+        </section>
+       
     </header>
+    <hr> 
     <main>
         
        <div class="main">
@@ -99,6 +102,6 @@
 
 
     <!-- Above is home page -->
-   
+   <script src="script.js"></script>
 </body>
 </html>

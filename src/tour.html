@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="https://tailwindcss.com/.css">
+
     <title>AboutSelf</title>
 </head>
 <body>
-    <main>
-        <div class="header">
-            <header>
-                
-                <section>
-                    <h1>aboutself</h1>
-                    <div id="header">
-                        <div class="container">
-                            <div class="logo">
-                                <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
+    <header class="bg-slate-500">
+            <section>
+               
+                <div class="md:flex justify-between content-center row">
+                    <div class="md:flex-row justify-between items-center">
+                        <div class="container flex-1 ">
+                            <div class="md:flex">
+                                <figure>
+                                    <img id="logo-" src="image/logo.png" alt="Logo of website" class="!place-items-start max-w-00.12 h-1" >
+                                </figure>
+                                <figcaption><h1 class="text-justify hover:transition-colors-slate-500 cursor-pointer  text-yellow-700">AboutSelf</h1></figcaption>
                             </div>
-                            <nav>
+                            <nav class="md:grid bg-gray-800 flex-row items-center justify-between h-16 inline-block text-justify">
                                 
-                                <ul>
+                                <ul class="font-sans">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="history.html">History</a></li>
                                     <li><a href="myskill.html">MySkill</a></li>
                                     <li><a href="about.html">About</a></li>
-                                   
                                     <li><a href="hobby.html">Hobby</a></li>
                                     <li><a href="tour.html">Tour</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
@@ -34,13 +36,14 @@
                             </nav>
                         </div>
                     </div>
-                </section>
-            </header>
-            
-        </div>
+                </div>
+            </section>
+           
+    </header>
+        <hr> 
       
         <!-- above is header part -->
-        
+    <main>
         <hr>
         <div>
             <section>
@@ -105,18 +108,22 @@
                         <button type="submit"> Find<i class="button"></i></button>
                     </form>
                 </div>
-                <div class="searchPlace">
-                    <nav>
-                        <ul>
-                            <li><a href="https://www.brilliant-ethiopia.com/bishoftu">Bishoftu</a></li>
-                            <li><a href="https://youtu.be/ApxXO7dFOJw">Abay Dam</a></li>
-                            <li><a href="https://youtu.be/ZozYksjK3ls">Hawasa City</a></li>
-                            <li><a href="https://youtu.be/vxaTVJo771g?si=SS9ub3-YuQ2j8liz">Lake Tana</a></li>
-                            <li><a href="https://youtu.be/YZkI3vg4oIE?si=qyMzjQ-6JC6NtPbQ">Unit park</a></li>
-                            <li><a href="https://youtu.be/j0ip1qJii10?si=7O7bXAdEeFDx98SD">Jimma abba Jifar</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <div class="dropdown">
+                    <h4 class="subtitle">Visit some places with me</h4>
+                    <button class="dropdown-button">Visit More</button>
+                    <ul class="dropdown-menu">
+                      <li><a href="https://www.brilliant-ethiopia.com/bishoftu" title="visit Bishoftu lakes" target="_blank">Visit Bishoftu </a></li>
+                      <li><a href="https://youtu.be/ApxXO7dFOJw" title="Visit Our Dam" target="_blank"> Visit Abay Dam</a></li>
+                      <li><a href="https://youtu.be/ZozYksjK3ls" title="Tour Hawassa"  target="_blank">Visit Hawassa City</a></li>
+                      <li><a href="https://youtu.be/vxaTVJo771g?si=SS9ub3-YuQ2j8liz" title="visit our greatest lake,Tana" target="_blank">Visit Lake Tana</a></li>
+                      <li><a href="https://youtu.be/YZkI3vg4oIE?si=qyMzjQ-6JC6NtPbQ" title="visit Unit park" target="_blank">Visit Unit Park</a></li>
+                      <li><a href="https://youtu.be/j0ip1qJii10?si=7O7bXAdEeFDx98SD" title="Visit Jimma palace" target="_blank">Visit Jimma Abba Jifar</a></li>
+                    </ul>
+                  </div>
+              
+
+
+            </div>
               
 
 
@@ -163,6 +170,6 @@
         
        
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>

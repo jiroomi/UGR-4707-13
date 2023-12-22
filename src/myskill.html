@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="https://tailwindcss.com/.css">
+
     <title>AboutSelf</title>
 </head>
 <body>
-    
-        <!-- header part -->
-        <header>
-            
-           <div>
-            <section>
-                <h1>AboutSelf</h1>
-                <div id="header">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
+    <header class="bg-slate-500">
+        <section>
+           
+            <div class="md:flex justify-between content-center row">
+                <div class="md:flex-row justify-between items-center">
+                    <div class="container flex-1 ">
+                        <div class="md:flex">
+                            <figure>
+                                <img id="logo-" src="image/logo.png" alt="Logo of website" class="!place-items-start max-w-00.12 h-1" >
+                            </figure>
+                            <figcaption><h1 class="text-justify hover:transition-colors-slate-500 cursor-pointer  text-yellow-700">AboutSelf</h1></figcaption>
                         </div>
-                        <div>
-                            <nav>
+                        <nav class="md:grid bg-gray-800 flex-row items-center justify-between h-16 inline-block text-justify">
                             
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a href="myskill.html">MySkill</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                   
-                                    <li><a href="hobby.html">Hobby</a></li>
-                                    <li><a href="tour.html">Tour</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            
-                            </nav>
-                        </div>
-                       
+                            <ul class="font-sans">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="history.html">History</a></li>
+                                <li><a href="myskill.html">MySkill</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="hobby.html">Hobby</a></li>
+                                <li><a href="tour.html">Tour</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        
+                        </nav>
+                    </div>
                 </div>
-            </section>
-           </div>
-        </header>
-        <!-- about part -->
-        <hr>
+            </div>
+        </section>
+       
+    </header>
+    <hr> 
         <!-- I have shown my educational background and languagues by using table -->
     <main>
         <div class="main">
@@ -200,7 +201,9 @@
              
                 </section>
             </div>
-        </footer>         <!-- footer -->
+        </footer>   
+    
+    <script src="script.js"></script>    <!-- footer -->
             
 </body>
 
