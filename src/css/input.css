@@ -29,7 +29,11 @@ header{
 }
 h1 {
   position: absolute;
+  left: 210px;
   top: 100px;
+  color: #3e8e41;
+  font-size: larger;
+  font-weight: 100px;
 
 }
 img{
@@ -261,7 +265,7 @@ sup {
 table {
   text-indent: 0;
   /* 1 */
-  border-color: inherit;
+  border-color: blueviolet;
   /* 2 */
   border-collapse: collapse;
   /* 3 */
@@ -368,6 +372,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
   outline-offset: -2px;
   /* 2 */
 }
+footer img{
+  width: 4vw;
+  border-radius: 25px;
+}
 
 /*
 Remove the inner padding in Chrome and Safari on macOS.
@@ -447,6 +455,7 @@ Prevent resizing textareas horizontally by default.
 */
 
 textarea {
+  padding: 10px;
   resize: vertical;
 }
 
@@ -468,6 +477,13 @@ textarea::placeholder {
   /* 1 */
   color: #9ca3af;
   /* 2 */
+}
+main p{
+  color:#e5e7eb ;
+  size: 30px;
+}
+h2{
+  align-items: center;
 }
 
 /*
@@ -506,6 +522,66 @@ object {
   vertical-align: middle;
   /* 2 */
 }
+table {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  flex-direction: column;
+  margin: 25px;
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 0;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+
+table th {
+  margin: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+.audiopart div{
+  border: solid 1px black;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: aqua;
+  padding: 100px;
+  
+
+}
+main div table{
+  flex-basis: 49%;
+}
+main div.audiopart{
+  
+  flex-basis: 46;
+}
+.computerSkill{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-basis: 98%;
+  overflow: hidden;
+}
+h3+div ul li{
+  list-style-type: none;
+  margin-left: 30px;
+  align-items: left;
+  width: 100%;
+}
+
 
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
@@ -515,6 +591,53 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+button{
+  font-size: 40px;
+}
+.dropdown-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: #0d31d3;
+  padding: 5px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button {
+  background-color: #3e8e41;
+}
+#logo-{
+  position: relative;
+  left: -96px;
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
@@ -572,6 +695,7 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
 
 ::backdrop {
   --tw-border-spacing-x: 0;
