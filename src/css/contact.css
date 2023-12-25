@@ -1,0 +1,10 @@
+main img{
+    width: 100% !important;
+    border-radius: 20px !important;
+}
+footer img{
+    width: 5vw !important;
+}
+.footer{
+    background-image: -moz-linear-gradient(grey ,#facafa);
+}

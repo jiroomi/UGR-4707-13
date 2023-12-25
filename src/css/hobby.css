@@ -1,0 +1,7 @@
+main{
+    height: 75vh;
+    background: grey;
+}
+footer:hover{
+    transform: translateY(-10px);
+}

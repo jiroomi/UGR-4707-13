@@ -3,83 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
     <title>AboutSelf</title>
 </head>
 <body>
-    <header>
-        <section>
-            <h1>AboutSelf</h1>
-            <div class="heder">
-                <div>
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png" alt="Logo of website" width="20" height="20">
+    <header class="header bg-gradient text-bg-info --bs-heading-color">
+        <section class="section ">
+            <div class="container">
+                <div class=" row ">
+                    <div class=" row justify-content-around align-items-center ">
+                        <div class=" col-1">
+                            <img id="logo-image" src="image/logo.png" alt="Logo of website" class="w-25">
+                            <h1>AboutSelf</h1>
+                            <label for="menu-toggle" class="menu-icon d-sm-none">&#9776;</label>
                         </div>
-                        <nav>
+                       <div class="col-6">
+                        <nav class="d-md-grid">
                             
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                            <ul class="list-unstyled d-inline">
+                                <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                                <li><a href="history.html" class="text-decoration-none text-white">History</a></li>
+                                <li><a href="myskill.html" class="text-decoration-none text-white">MySkill</a></li>
+                                <li><a href="about.html" class="text-decoration-none text-white">About</a></li>
+                                <li><a href="hobby.html" class="text-decoration-none text-white">Hobby</a></li>
+                                <li><a href="tour.html" class="text-decoration-none text-white">Tour</a></li>
+                                <li><a href="contact.html" class="text-decoration-none text-white">Contact Us</a></li>
+                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
                             </ul>
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                         
                         </nav>
+                       </div>
                     </div>
                 </div>
             </div>
         </section>
        
     </header>
-    <hr> 
+     
 
-    <main>
-        <div class="main">
-            <section>
-                <h4>Some content here below</h4>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam dicta optio,
-                        amet maiores qui eaque exercitationem incidunt.
-                        Labore, et? Velit aperiam incidunt beatae et vel nemo harum excepturi repellat.</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus 
-                       neque voluptatem harum consequatur odit hic totam, qui quibusdam 
-                       libero dolorum incidunt iusto tenetur quas iure,
-                        ducimus consectetur quo vel?</p>  
+    <main class="bg-black my-2">
+        <div class="container bg-gradient(overflow-y-hidden translate-middle-y)">
+            <section class=" section text-center ">
+                <div class="row my-sm-5 ms-1 bg-dark-subtle rounded-2" >
+                    <h4 class="card-title  d-sm-inline-flex align-content-center">Some content here below</h4>
+                <div class="card-img my-4">
+                    
+                        <p class="text-primary-emphasis align-content-xl-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam dicta optio,
+                            amet maiores qui eaque exercitationem incidunt.
+                            Labore, et? Velit aperiam incidunt beatae et vel nemo harum excepturi repellat.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus 
+                           neque voluptatem harum consequatur odit hic totam, qui quibusdam 
+                           libero dolorum incidunt iusto tenetur quas iure,
+                            ducimus consectetur quo vel?</p> 
+                     
                 </div>
-                <div id="image"><img src="image/homeimage.jpg" alt="heart photo" width="400" height="400"></div>
+                </div>
+                <div id="image " class="img-thumbnail bg-success p-4">
+                    <figure><img src="image/homeimage.jpg" alt="photo of women using laptop" class="w-100 object-fit-cover rounded-5 img-fluid"></figure>
+                </div>
             </section>
         </div>
 
     </main>
-    <hr> 
     <!-- below is footer part -->
-    <footer>
-        <div class="footer">
+    <footer class="footer mb-auto bg-secondary-subtle">
+        <div class="card-footer mx-5">
             <section>
-                <h1>follow us</h1>
-                <div>           
-                    <p>if you are <strong>interested</strong>  about my history you can <span>contact me</span>  through the following social media links</p>
-                </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li><a href="www.https://facebook.com"  target="_blank" title="facebook browser"> <img src="image/facebook-icon.jpg" alt="facebook icon" class="facebook icon">facebook</a></li>
-                            <li><a href="www.https://linkden.com" target="_blank" title="linkden browser"> <img src="image/linkedin-icon.png" alt="Linkdein icon">linkden</a></li>
-                            <li><a href="www.https://instgram.com" target="_blank" title="instgram browser"><img src="image/instgram-icon.jpg" alt="instgram icon">Instgram</a></li>
+                <h3 class="text-primary mx-auto my-5">follow us on</h3>
+               
+                <div class="row flex justify-content-center">
+                    
+                        
+                     <div class="col-4 align-middle bg-secondary-subtle">
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="www.https://facebook.com"  target="_blank" title="facebook browser " class="text-decoration-none link-dark link-opacity-10-hover  mx-lg-5 px-5 text-black"> 
+                                        <img src="image/facebook-icon.jpg" alt="facebook icon" class="facebook icon" class="align-items-center ">facebook</a></li>
+                                <li>    <a href="www.https://linkden.com" target="_blank" title="linkden browser" class="text-decoration-none link-dark link-opacity-10-hover  mx-lg-5 px-5 text-black  "> 
+                                        <img src="image/linkedin-icon.png" alt="Linkdein icon" class="align-items-center">linkden</a></li>
+                                <li>   <a href="www.https://instgram.com" target="_blank" title="instgram browser" class="text-decoration-none link-dark link-opacity-10-hover  mx-lg-5  px-5  text-black">
+                                        <img src="image/instgram-icon.jpg" alt="instgram icon" class="align-items-center align-middle">Instgram</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                     </div>
+
+                    <div class=" col-6 align-content-center">
+                        <span>copy Right </span>
+                        <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222" class="text-decoration-none link-offset-3-hover"><img src="image/copyimage.jpg" alt="copyright-symbol"  id="copyimage" class="align-items-center" >2023 by AboutSelf</a>
+                       
+                                
+                    </div>
                             
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222"><img src="image/copyimage.jpg" alt="copyright-symbol" >2023 by AboutSelf</a>
+                        
                     
                 </div>
+                
             
-                 <div>  <span>copy Right </span></div>
-                 <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                 
+                 <div class="flex justify-content-center align-content-center mb-5 bg-info-subtle rounded-3"><p class="card-footer m-5 text-warning-emphasis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Deleniti ex neque quia obcaecati tempora minima exercitationem, 
                 commodi iusto, praesentium enim soluta
                  vero nobis vel dolor repudiandae distinctio esse quisquam aut?</p>
@@ -88,6 +116,12 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
     
 </body>
-</html>

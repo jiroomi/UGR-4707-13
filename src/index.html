@@ -3,58 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/home.css">
     <title>AboutSelf</title>
 </head>
 <body>
-        
-    <header>
-        <div class="header">
-            <section>
-                <div>
-                    <h1>AboutSelf</h1>
-                <div id="header">
-                    <div class="">
-        
-                        <nav>
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
+    <header class="header bg-gradient text-bg-info --bs-heading-color">
+        <section class="section ">
+            <div class="container">
+                <div class=" row ">
+                    <div class=" row justify-content-around align-items-center ">
+                        <div class=" col-1">
+                            <img id="logo-image" src="image/logo.png" alt="Logo of website" class="w-25">
+                            <h1>AboutSelf</h1>
+                            <label for="menu-toggle" class="menu-icon d-sm-none">&#9776;</label>
+                        </div>
+                       <div class="col-6">
+                        <nav class="d-md-grid">
                             
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                            <ul class="list-unstyled d-inline">
+                                <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                                <li><a href="history.html" class="text-decoration-none text-white">History</a></li>
+                                <li><a href="myskill.html" class="text-decoration-none text-white">MySkill</a></li>
+                                <li><a href="about.html" class="text-decoration-none text-white">About</a></li>
+                                <li><a href="hobby.html" class="text-decoration-none text-white">Hobby</a></li>
+                                <li><a href="tour.html" class="text-decoration-none text-white">Tour</a></li>
+                                <li><a href="contact.html" class="text-decoration-none text-white">Contact Us</a></li>
+                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
                             </ul>
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                         
                         </nav>
+                       </div>
                     </div>
                 </div>
-                <hr>
-                </div>
-            </section>
-        </div>
-            
-            
+            </div>
+        </section>
+       
     </header>
     <main>
         
-       <div class="main">
+       <div class="container-fluid flex card ">
         <section>
-            <h2>WEL COME TO MY HOME!</h2>
+            <h2 class="card-header ">WEL COME TO MY HOME!</h2>
             
-            <img src="image/photo1.jpg" width="1000" alt="House">
-            <p>Lorem ipsum dolor sit amet, consectetur 
+            <div class="thumbnail w-100 h-auto">
+                <figure>
+                    <img src="image/photo1.jpg" alt="House"  class="img-fluid w-100 rounded-5">
+                </figure>
+            </div>
+            <p class="text-info  justify-content-center align-content-stretch">
+                Lorem ipsum dolor sit amet, consectetur 
                 adipisicing elit. Non harum a reprehenderit fuga sequi <br>
                  sunt recusandae voluptas, hic obcaecati officiis cumque veritatis 
                  culpa accusantium eius, 
                 
-                pariatur enim at animi. Minima.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                pariatur enim at animi. Minima.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Cumque qui asperiores repellat ut perspiciatis! Voluptates ipsum recusandae cupiditate 
-                    quisquam ea autem cum corporis et, excepturi laborum quas officia molestiae incidunt!</p>
-            <p>
+                    quisquam ea autem cum corporis et, excepturi laborum quas officia molestiae incidunt!
+            
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Distinctio et blanditiis architecto ipsam necessitatibus vero aspernatur 
                  itaque quia, quisquam voluptate illum nisi ducimus? Accusamus labore ratione,
@@ -68,28 +79,33 @@
     </main>
     <hr>
     <footer>
-        <div class="footer">
+        <div class="container-fluid bg-white text-black">
             <section>
-                <h5> follow us</h5>
-                <div>
-                    <ul>
-                        <li><a href="aboutself@gmail.com">aboutself@gmail.com<img src="image/email-icon.jpg" width="5" height="3" alt="email icon"></a></li>
-                        <li><a href="#contact">conact us</a></li>
-                        <li><a href="#call-Us">call Us :</a></li>
-                        <li>&#128222; +251712520304 </li>
-                    
-                    </ul>
-                    
-                </div>
                 
-                <div>
-                    <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222"><img src="image/copyimage.jpg" alt="copy right photo" >2023 by AboutSelf</a>
-                    
-                </div>
-               
-            <div>
-                <span>copy Right </span>
-            </div>
+               <div class="row">
+                    <div class="col-md-4">
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="about.html" class="text-decoration-none text-danger">About us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="text-decoration-none text-danger">contact us</a>
+                                </li>
+                                <a href="https://www.com " class="text-decoration-none text-danger">aboutself@gmail.com</a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class=" col-md-4 align-content-center text-black">
+                        <span>copy Right </span>
+                        <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222" class="text-decoration-none text-black"><img src="image/copyimage.jpg" alt="copyright-symbol"  id="copyimage" class="align-items-center" >2023 by AboutSelf</a>
+                       
+                                
+                    </div>
+               </div>
+               <div class="row">
+                <h5 class="text-center"> follow us</h5>
+               </div>
             </section>
             <hr>
         </div>
@@ -98,7 +114,13 @@
     </footer>
 
 
-    <!-- Above is home page -->
-   
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script> 
 </body>
 </html>

@@ -3,75 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>AboutSelf</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <section>
-                <h1 class="logo-text"> ABOUTSELF</h1>
-                <div >
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
-                            
+    <header class="header bg-gradient text-bg-info --bs-heading-color">
+        <section class="section ">
+            <div class="container">
+                <div class=" row ">
+                    <div class=" row justify-content-around align-items-center ">
+                        <div class=" col-1">
+                            <img id="logo-image" src="image/logo.png" alt="Logo of website" class="w-25">
+                            <h1>AboutSelf</h1>
+                            <label for="menu-toggle" class="menu-icon d-sm-none">&#9776;</label>
                         </div>
-                        <nav>
+                       <div class="col-6">
+                        <nav class="d-md-grid">
                             
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                               
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                            <ul class="list-unstyled d-inline">
+                                <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                                <li><a href="history.html" class="text-decoration-none text-white">History</a></li>
+                                <li><a href="myskill.html" class="text-decoration-none text-white">MySkill</a></li>
+                                <li><a href="about.html" class="text-decoration-none text-white">About</a></li>
+                                <li><a href="hobby.html" class="text-decoration-none text-white">Hobby</a></li>
+                                <li><a href="tour.html" class="text-decoration-none text-white">Tour</a></li>
+                                <li><a href="contact.html" class="text-decoration-none text-white">Contact Us</a></li>
+                                <i class="fa-solid fa-terminal" onclick="clsoemenu()"></i>
                             </ul>
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                         
                         </nav>
+                       </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+       
     </header>
-    <hr>
     <main>
         <!-- above is header part -->
-        <div class="main">
+        <div class="container-fluid">
             <section> 
-                <h3>Concta us page</h3> 
-                <div class="contact">
+                <div class="d-grid row card mt-5 border-warning-subtle">
+                    <h3 class="card-body text-bg-dark">Concta us page</h3> 
+                     <div class="flex-wrap">
                     
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                        <p class="align-content-center bg-secondary-subtle text-md-center text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
                      voluptatum. Minima voluptatum, quasi quas, fugiat vel amet maiores dignissimos illum accusamus,
-                     enim facere perspiciatis esse nemo accusantium dolorum blanditiis qui?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     enim facere perspiciatis esse nemo accusantium dolorum blanditiis qui?
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                      In quia optio error expedita qui sunt quod possimus deleniti amet quasi harum quas iure
                      pariatur, ipsam eos ut quo quos molestias?</p>
+                    </div>
                 </div>
-            </section>  <hr>
+            </section>  
           
-            <section>
-                <h4>Will you come to our home?</h4>
-                <div class="formClass"><p><span>Create account</span><br>Sign in<span></span></p>
-    
-                    <div id="form">
-                        <form action="/action_page.php">
-                            <label for="name">Full Name:</label><br>
-                            <input type="text" id="name" name="Name" value="Write your Name"><br>
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="Email" value="Write your Email"><br><br>
-                            <label for="comment">CommentLine</label><br>
-                            <input type="text" id="comment" name="Comment" value="leave your comment here">
-                            <input type="submit" value="Submit">
-                        </form>
+            <section class="section bg-light">
+                <div class="row my-3 rounded-4">
+                    <h4 class="text-center text-black">Will you come to our home?</h4>
+                    <div class="col-md-4 bg-light">
+                        <div class="form-control bg-dark">
+                            <p class="col-sm-auto text-bg-primary text-center p-2"><span>Create account</span><br>Sign in<span></span></p>
+                                <form action="/action_page.php" >
+                                    <label for="name" class="form-label">Full Name:</label><br>
+                                    <input type="text" id="name" name="Name" value="Write your Name" class="p-1"><br>
+                                    <label for="email">Email:</label><br>
+                                    <input type="email" id="email" name="Email" value="Write your Email" class="p-1"><br><br>
+                                    <label for="comment">CommentLine</label><br>
+                                    <input type="text" id="comment" name="Comment" value="leave your comment here" class="p-5">
+                                    <input type="submit" value="Submit" class="button my-2 bg-danger rounded-3 text-white-50 link-opacity-10-hover">
+                                </form>
+                        </div>
                     </div>
+                   <div class="col-md-8 rounded-4">
                     <div id="Phot">
-                        <img src="image/contactPhoto.jpg" alt="beautifu house photo" width="700">
-    
+                        <figure class="img-fluid"><img src="image/contactPhoto.jpg" alt="beautifu house photo" class="w-100"></figure>
+        
                     </div>
-                    
+                   </div>
+                        
+                
+    
                 </div>
             </section> 
 
@@ -81,42 +97,58 @@
     </main> <hr>
     
     <!-- below this is it's footer -->
-    <footer>
-        <div class="footer">
-            <section>
-                <div>
-                    <h5>Follow us</h5>
-                    <div>           
-                         <p>if you are <strong>interested</strong>  about my history you can <span>contact me</span>  through the following social media links</p>
-                    </div>
-                    <div>
+    <footer class="card-footer">
+        <div class="container-fluid">
+            <section class=" sectiom footer ">
+                
+                 <div class="row">
+                    <div class="d-grid justify-content-center align-content-center"> 
                         <nav>
-                            <ul>
-                                <li><a href="www.https://facebook.com"  target="_blank" title="facebook browser"> <img src="image/facebook-icon.jpg" alt="facebook icon" class="facebook icon">facebook</a></li>
-                                <li><a href="www.https://linkden.com" target="_blank" title="linkden browser"> <img src="image/linkedin-icon.png" alt="Linkdein icon">linkden</a></li>
-                                <li><a href="www.https://instgram.com" target="_blank" title="instgram browser"><img src="image/instgram-icon.jpg" alt="instgram icon">Instgram</a></li>
-                            
+                            <ul class="list-unstyled mx-5">
+                                <li>
+                                    <a href="www.https://facebook.com"  target="_blank" title="facebook browser " class="text-decoration-none link-dark link-opacity-10-hover  mx-lg-5 px-5 text-black"> 
+                                        <img src="image/facebook-icon.jpg" alt="facebook icon" class="facebook icon" class="align-items-center ">facebook</a></li>
+                                <li>    <a href="www.https://linkden.com" target="_blank" title="linkden browser" class="text-decoration-none link-dark link-opacity-10-hover  mx-lg-5 px-5 text-black  "> 
+                                        <img src="image/linkedin-icon.png" alt="Linkdein icon" class="align-items-center">linkden</a></li>
+                                <li>   <a href="www.https://instgram.com" target="_blank" title="instgram browser" class="text-decoration-none link-dark link-opacity-10-hover  mx-lg-5  px-5  text-black">
+                                        <img src="image/instgram-icon.jpg" alt="instgram icon" class="align-items-center align-middle">Instgram</a>
+                                </li>
                             </ul>
                         </nav>
+
                     </div>
-                    <div>
-                        <aside>
-                            <p><span>follow us</span> <br> <span>contact us</span> <br> <span>keep with us </span></p>
-                        </aside>
+                    <div class="d-grid justify-content-center align-content-center my-4">
+                        <p class="text-warning"><span>follow us</span> <br> 
+                            <span>contact us</span> <br> 
+                            <span>keep with us </span></p>
                     </div>
+                 </div>   
+                    
+                    
+                        
+                           
+                        
+                    
                     </div>
-                    <div>
-                        <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222"><img src="image/copyimage.jpg" alt="copy right photo">2023 by AboutSelf</a>
+                    <div class="flex-row justify-content-center align-content-center mx-5"><span class=" text-black">copy Right </span>
+                        <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222" class="text-decoration-none text-black-100"><img src="image/copyimage.jpg" alt="copy right photo">2023 by AboutSelf</a>
                         
                     </div>
 
             
-                <div>  
-                <span>copy Right </span>
-               </div>
+                 
+                
+               
      
             </section>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
