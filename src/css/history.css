@@ -1,3 +1,11 @@
 main p{
     color: #665555;
 }
+main video {
+    border-radius: 10px;
+}
+.video{
+    padding: 20px;
+    background: lightyellow;
+    
+}
