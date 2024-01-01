@@ -90,6 +90,44 @@ main div{
   align-items: center;
   flex-direction: row-reverse;
 }
+nav.fa-bars{
+  display: none;
+}
+        /* media queries */
+
+        @media only screen and (max-width: 660px) {
+          body {
+            background-color: lightblue;
+
+          }
+          header nav ul { display: none;}
+          nav.fa-bars{
+            display: block;
+            font-size: 20px;
+          }
+          nav ul{
+            background-color: azure;
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100vh;
+            padding: 60px;
+            z-index: 2;
+          }
+          nav ul li {
+            display: block;
+            margin: 25px;
+          }
+          nav ul.fas{
+            position: absolute;
+            left: 25;
+            right: 25;
+            cursor: pointer;
+          }
+        }
+      
+       
 
 ::before,
 ::after {

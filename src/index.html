@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/input.css">
     <link rel="stylesheet" href="https://tailwindcss.com/.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/house?f=classic&s=solid">
 
     <title>AboutSelf</title>
 </head>
@@ -31,7 +32,9 @@
                                 <li><a  class="hover:bg-blue-500 hover:ring-blue-500 hover:shadow-md group rounded-md p-3 bg-white ring-1 ring-slate-200 shadow-sm"href="hobby.html">Hobby</a></li>
                                 <li><a  class="hover:bg-blue-500 hover:ring-blue-500 hover:shadow-md group rounded-md p-3 bg-white ring-1 ring-slate-200 shadow-sm"href="tour.html">Tour</a></li>
                                 <li><a  class="hover:bg-blue-500 hover:ring-blue-500 hover:shadow-md group rounded-md p-3 bg-white ring-1 ring-slate-200 shadow-sm"href="contact.html">Contact Us</a></li>
+                                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                             </ul>
+                            <i class="fa-solid fa-house" onclick="openmenu()"></i>
                         
                         </nav>
                     </div>
@@ -103,5 +106,15 @@
 
     <!-- Above is home page -->
    <script src="script.js"></script>
+   <script>
+    let sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right="0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right="-200px";
+    }
+</script>
 </body>
 </html>
