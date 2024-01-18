@@ -3,111 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.flaticon.com/free-icon/like_880605">
-    <title>aboutself</title>
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>AboutSelf</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <section>
-                <div >
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20" alt="Logo of website">
-                            <h1 class="logo-text"> ABOUTSELF</h1>
-                        </div>
-                        <nav>
-                            
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                               
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        
-                        </nav>
+    <header class="header hero"> 
+
+        <section class="section hero-body has-background-primary-dark">
+            <nav class="navbar has-shadow is-white">
+
+
+                <div class="navbar">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="">
+                            <figure class="image">
+                                <img id="logo-image" src="image/logo.png" alt="Logo of website" class="roundend" width="20px">
+                                <figcaption>AboutSelf</figcaption>
+                            </figure>
+                        </a>
+                        <a id="burger" class="navbar-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+    
                     </div>
                 </div>
-                <hr>
-            </section>
-        </div>
+    
+    
+                <div id="nav-links" class="navbar-menu">
+                    <div  class="navbar-end">
+                        
+                        <a href="index.html" class="navbar-item  py-5 px-5 is-size-4">Home</a>
+                        <a href="history.html" class="navbar-item  py-5 px-5 is-size-4">History</a>
+                        <a href="myskill.html" class="navbar-item  py-5 px-5 is-size-4">MySkill</a>
+                        <a href="about.html" class="navbar-item  py-5 px-5 is-size-4">About</a>
+                        <a href="hobby.html" class="navbar-item  py-5 px-5 is-size-4">Hobby</a>
+                        <a href="tour.html" class="navbar-item  py-5 px-5 is-size-4">Tour</a>
+                        <a href="contact.html" class="navbar-item  py-5 px-5 is-size-4">Contact Us</a>
+                        
+                        
+    
+                    </div>
+                </div>
+
+
+
+            </nav>
+        </section>
        
     </header>
-    <main>
-       <div class="main">
-        <section>
-            <div>
-                <h1>This is history topic </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci aperiam, 
-                fugiat velit amet temporibus ipsum animi nemo eum voluptatem
-                 quidem illum tempore assumenda saepe id eaque aliquid. Voluptates, hic.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                 Repudiandae eius sunt sapiente a quam blanditiis veritatis deleniti ipsa mollitia aspernatur soluta,
-                  ullam obcaecati delectus culpa,
-                 laborum qui et debitis necessitatibus!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, 
-                corrupti rerum impedit aliquid rem dolores quaerat eos qui distinctio perspiciatis reprehenderit 
-                ad aliquam nihil atque. Vitae ab sed vel aliquam.</p>
+    <main class="content">
+        <section class="section">
+            <div class="container">
+                <h1 class="has-text-black py-4 is-size-1">Some historical place I have visited </h1>
+                <p class="has-text-grey-dark is-size-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci aperiam, 
+                    fugiat velit amet temporibus ipsum animi nemo eum voluptatem
+                     quidem illum tempore assumenda saepe id eaque aliquid. Voluptates, hic.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Repudiandae eius sunt sapiente a quam blanditiis veritatis deleniti ipsa mollitia aspernatur soluta,
+                      ullam obcaecati delectus culpa,
+                     laborum qui et debitis necessitatibus!
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, 
+                    corrupti rerum impedit aliquid rem dolores quaerat eos qui distinctio perspiciatis reprehenderit 
+                    ad aliquam nihil atque. Vitae ab sed vel aliquam.</p>
+                    </div>
+
             </div>
-            
-        </section><hr>
-        <section>
-            <div class="video">
-                <h5>Do you like News?</h5>
-                <div> 
-                    <video width="320" height="240" controls>
-                    <source src="video/myvideo.mp4" type="video/mp4">
-                    
-                    
-                   Oho! Your browser does not support video!
-                    </video>
-                 <!-- I have do review this functionality -->
-                </div>
-            </div>
-            
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dignissimos quibusdam quos quia fugiat asperiores temporibus voluptate, 
-                    veritatis fuga ducimus, 
-                    eum libero, alias veniam? Quae mollitia aliquid, ex laboriosam error iste?</p>
-            </div>
-           
         </section>
-       </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="video w-100 h-auto d-lg-flex justify-content-center align-content-center rounded-4"> 
+                    <video  height="240" controls>
+                    <source src="video/myvideo.mp4" type="video/mp4" class=" p-3">
+                    
+                    
+                    
+                     Oho! Your browser does not support video!
+                    </video>
+                 
+                </div>
+
+                <div class="content">
+                    <p class="has-text-black is-size-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dignissimos quibusdam quos quia fugiat asperiores temporibus voluptate, 
+                        veritatis fuga ducimus, 
+                        eum libero, alias veniam? Quae mollitia aliquid, ex laboriosam error iste?</p>
+                </div>
+
+            </div>
+        </section>
 
     </main>
-    <hr>
-    <footer>
-        <div class="footer">
-            <section>
-                <h6>Follow us</h6>
-                <div >
-                    <div>           
-                        <p>if you are <strong>interested</strong>  about my history you can <span>contact me</span>  through the following social media links</p>
-                    </div>
-                    <div>
-                        <nav>
-                            <ul>
-                                <li><a href="www.https://facebook.com"  target="_blank" title="facebook browser"> <img src="image/facebook-icon.jpg" alt="facebook icon" class="facebook icon">facebook</a></li>
-                                <li><a href="www.https://linkden.com" target="_blank" title="linkden browser"> <img src="image/linkedin-icon.png" alt="Linkdein icon">linkden</a></li>
-                                <li><a href="www.https://instgram.com" target="_blank" title="instgram browser"><img src="image/instgram-icon.jpg" alt="instgram icon">Instgram</a></li>
-                                
-                            </ul>
-                        </nav>
-                    </div>
-                    <div>
-                        <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222"><img src="image/copyimage.jpg" alt="copy right photo" >2023 by AboutSelf</a>
+    <footer class="footer has-background-grey has-text-white">
+        <div class="content">
+            <div class="columns">
+                <div class="column ">
+                    <p  class="is-size-6 has-text-warning">if you are <strong class="has-text-white">interested</strong>  about my history you can <span>contact me</span>  through the following social media links</p>
+                    
                         
-                    </div>
-                    <span>copy Right </span>
+                    <p>
+                        <h6  class="subtitle has-text-primary-light">Follow us</h6>   
+                        <a href="about.html" class="text-decoration-none has-text-white is-link is-size-6">About us</a> <br>   
+                        
+                         <a href="contact.html" class="text-decoration-none has-text-white is-link is-size-6">contact us</a> <br>
+                        
+                         <a href="https://www.gmail.com " class="text-decoration-none has-text-white is-link is-size-6">aboutself@gmail.com</a> <br>
+                    </p>
+                    
                 </div>
+                <div class="column" id="footer-img">
+                    <a href="https://www.facebook.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank" > 
+                        <img src="image/facebook-icon.jpg" alt="facebook icon" class="is-rounded image is-24x24">
+                        
+                    </a> <br>
+                    <a href="https://www.linkedin.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank">
+                        <img src="image/linkedin-icon.png" alt="Linkdein icon" class="image is-24x24">
+                        
+
+                    </a> <br>
+                    <a href="https://www.instgram.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank">
+                        <img src="image/instgram-icon.jpg" alt="instgram icon" class="is-rounded image is-24x24">
+                        
+                    </a> <br>
+                </div>
+            </div>
+            <div class="row  has-text-centered has-background-grey">
+                <span class="has-text-black inline-block">copy Right </span>
+                <a href="contact.html" class="copyright has-text-black ">&#169;
+                    
+                    2023 by AboutSelf</a>
+                    <a href="#home"></i></a>
                 
-            </section>
-        </div>
+            </div>
+        </div>   
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

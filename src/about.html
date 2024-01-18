@@ -3,91 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+   <link rel="stylesheet" href="https://fontawesome.com/icons/facebook?f=brands&s=solid">
+
+   <link rel="stylesheet" href="">
+   <style>
+    #logo-image {
+        
+        border-radius: 30px;
+    }
+   </style>
     <title>AboutSelf</title>
 </head>
 <body>
-    <header>
-        <section>
-            <h1>AboutSelf</h1>
-            <div class="heder">
-                <div>
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png" alt="Logo of website" width="20" height="20">
-                        </div>
-                        <nav>
-                            
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        
-                        </nav>
+    <header class="header hero"> 
+
+        <section class="section hero-body has-background-primary-dark">
+            <nav class="navbar has-shadow is-white">
+
+
+                <div class="navbar ">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="">
+                            <figure class="image">
+                                <img id="logo-image" src="image/logo.png" alt="Logo of website" class="roundend" width="20px">
+                                <figcaption>AboutSelf</figcaption>
+                            </figure>
+                        </a>
+                        <a id="burger" class="navbar-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+    
                     </div>
                 </div>
-            </div>
+    
+    
+                <div id="nav-links" class="navbar-menu">
+                    <div  class="navbar-end">
+                        
+                        <a href="index.html" class="navbar-item  py-5 px-5 is-size-4">Home</a>
+                        <a href="history.html" class="navbar-item  py-5 px-5 is-size-4">History</a>
+                        <a href="myskill.html" class="navbar-item  py-5 px-5 is-size-4">MySkill</a>
+                        <a href="about.html" class="navbar-item  py-5 px-5 is-size-4">About</a>
+                        <a href="hobby.html" class="navbar-item  py-5 px-5 is-size-4">Hobby</a>
+                        <a href="tour.html" class="navbar-item  py-5 px-5 is-size-4">Tour</a>
+                        <a href="contact.html" class="navbar-item  py-5 px-5 is-size-4">Contact Us</a>
+                        
+                        
+    
+                    </div>
+                </div>
+
+
+
+            </nav>
         </section>
        
     </header>
-    <hr> 
 
-    <main>
-        <div class="main">
-            <section>
-                <h4>Some content here below</h4>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam dicta optio,
+
+
+
+     
+
+    <main class="my-2 is-responsive">
+        <section class="section">
+            <div class="container">
+                
+
+                <div class="column">
+                    <span class="title has-text-centered has-text-black is-size-1 my-6">About Us</span>
+                     <h4 class="title is-size-3">Some content here below</h4>
+                    
+                    <p class="content is-medium is-size-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam dicta optio,
                         amet maiores qui eaque exercitationem incidunt.
-                        Labore, et? Velit aperiam incidunt beatae et vel nemo harum excepturi repellat.</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus 
+                        Labore, et? Velit aperiam incidunt beatae et vel nemo harum excepturi repellat.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus 
                        neque voluptatem harum consequatur odit hic totam, qui quibusdam 
                        libero dolorum incidunt iusto tenetur quas iure,
-                        ducimus consectetur quo vel?</p>  
+                        ducimus consectetur quo vel?</p> 
+                 
                 </div>
-                <div id="image"><img src="image/homeimage.jpg" alt="heart photo" width="400" height="400"></div>
-            </section>
-        </div>
+
+
+                <div id="image " class="img-thumbnail bg-success p-4 is-roundend is-responsive">
+                    <figure class="image"><img src="image/homeimage.jpg" alt="photo of women using laptop" class="w-100 object-fit-cover rounded-5 img-fluid"></figure>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+      
 
     </main>
-    <hr> 
     <!-- below is footer part -->
-    <footer>
-        <div class="footer">
-            <section>
-                <h1>follow us</h1>
-                <div>           
-                    <p>if you are <strong>interested</strong>  about my history you can <span>contact me</span>  through the following social media links</p>
-                </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li><a href="www.https://facebook.com"  target="_blank" title="facebook browser"> <img src="image/facebook-icon.jpg" alt="facebook icon" class="facebook icon">facebook</a></li>
-                            <li><a href="www.https://linkden.com" target="_blank" title="linkden browser"> <img src="image/linkedin-icon.png" alt="Linkdein icon">linkden</a></li>
-                            <li><a href="www.https://instgram.com" target="_blank" title="instgram browser"><img src="image/instgram-icon.jpg" alt="instgram icon">Instgram</a></li>
+
+        <footer class="footer has-background-grey-light has-text-black is-responsive">
+            <div class="content">
+                <div class="columns">
+                    <div class="column ">
+                        
                             
-                        </ul>
-                    </nav>
+                        <a href="about.html" class="text-decoration-none has-text-white is-link is-size-6">About us</a> <br>   
+                            
+                        <a href="contact.html" class="text-decoration-none has-text-white is-link is-size-6">contact us</a> <br>
+                            
+                        <a href="https://www.gmail.com " class="text-decoration-none has-text-white is-link is-size-6">aboutself@gmail.com</a> <br>
+                        
+                    </div>
+                    <div class="column" id="footer-img">
+                        <a href="https://www.facebook.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank" > 
+                            <img src="image/facebook-icon.jpg" alt="facebook icon" class="is-rounded image is-24x24">
+                            
+                        </a> <br>
+                        <a href="https://www.linkedin.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank">
+                            <img src="image/linkedin-icon.png" alt="Linkdein icon" class="image is-24x24">
+                            
+
+                        </a> <br>
+                        <a href="https://www.instgram.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank">
+                            <img src="image/instgram-icon.jpg" alt="instgram icon" class="is-rounded image is-24x24">
+                            
+                        </a> <br>
+                    </div>
+                   
                 </div>
-                <div>
-                    <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222"><img src="image/copyimage.jpg" alt="copyright-symbol" >2023 by AboutSelf</a>
+              
+            
+                <div class="content my-15 has-text-black">
+                    <p class="content is-normal text-primary is-responsive $is-warning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Deleniti ex neque quia obcaecati tempora minima exercitationem, 
+                    commodi iusto, praesentium enim soluta
+                    vero nobis vel dolor repudiandae distinctio esse quisquam aut?
+                    </p>
+                </div>
+
+
+
+                <div class="has-text-centered mt-10">
+                    <span class="has-text-black inline-block">copy Right </span>
+                    <a href="contact.html" class="copyright has-text-black ">&#169;
+                        
+                        2023 by AboutSelf</a>
+                        
                     
                 </div>
-            
-                 <div>  <span>copy Right </span></div>
-                 <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Deleniti ex neque quia obcaecati tempora minima exercitationem, 
-                commodi iusto, praesentium enim soluta
-                 vero nobis vel dolor repudiandae distinctio esse quisquam aut?</p>
-                </div>
-            </section>
-        </div>
+            </div>   
+        </footer>
 
-    </footer>
+
+    <script src="script.js"></script>
+    
     
 </body>
-</html>

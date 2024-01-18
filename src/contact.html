@@ -3,120 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>AboutSelf</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <section>
-                <h1 class="logo-text"> ABOUTSELF</h1>
-                <div >
-                    <div class="container">
-                        <div class="logo">
-                            <img id="logo-image" src="image/logo.png"  width="20" height="20"  alt="Logo of website">
-                            
-                        </div>
-                        <nav>
-                            
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="myskill.html">MySkill</a></li>
-                                <li><a href="about.html">About</a></li>
-                               
-                                <li><a href="hobby.html">Hobby</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        
-                        </nav>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </header>
-    <hr>
-    <main>
-        <!-- above is header part -->
-        <div class="main">
-            <section> 
-                <h3>Concta us page</h3> 
-                <div class="contact">
-                    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
-                     voluptatum. Minima voluptatum, quasi quas, fugiat vel amet maiores dignissimos illum accusamus,
-                     enim facere perspiciatis esse nemo accusantium dolorum blanditiis qui?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                     In quia optio error expedita qui sunt quod possimus deleniti amet quasi harum quas iure
-                     pariatur, ipsam eos ut quo quos molestias?</p>
-                </div>
-            </section>  <hr>
-          
-            <section>
-                <h4>Will you come to our home?</h4>
-                <div class="formClass"><p><span>Create account</span><br>Sign in<span></span></p>
-    
-                    <div id="form">
-                        <form action="/action_page.php">
-                            <label for="name">Full Name:</label><br>
-                            <input type="text" id="name" name="Name" value="Write your Name"><br>
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="Email" value="Write your Email"><br><br>
-                            <label for="comment">CommentLine</label><br>
-                            <input type="text" id="comment" name="Comment" value="leave your comment here">
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
-                    <div id="Phot">
-                        <img src="image/contactPhoto.jpg" alt="beautifu house photo" width="700">
-    
-                    </div>
-                    
-                </div>
-            </section> 
+    <header class="header hero "> 
 
-        </div>
-        
+        <section class="section hero-body has-background-primary-dark">
+            <nav class="navbar has-shadow is-white">
+
+
+                <div class="navbar">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="">
+                            <figure class="image">
+                                <img id="logo-image" src="image/logo.png" alt="Logo of website" class="roundend" width="20px">
+                                <figcaption>AboutSelf</figcaption>
+                            </figure>
+                        </a>
+                        <a id="burger" class="navbar-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+    
+                    </div>
+                </div>
+    
+    
+                <div id="nav-links" class="navbar-menu">
+                    <div  class="navbar-end">
+                        
+                        <a href="index.html" class="navbar-item  py-5 px-5 is-size-4">Home</a>
+                        <a href="history.html" class="navbar-item  py-5 px-5 is-size-4">History</a>
+                        <a href="myskill.html" class="navbar-item  py-5 px-5 is-size-4">MySkill</a>
+                        <a href="about.html" class="navbar-item  py-5 px-5 is-size-4">About</a>
+                        <a href="hobby.html" class="navbar-item  py-5 px-5 is-size-4">Hobby</a>
+                        <a href="tour.html" class="navbar-item  py-5 px-5 is-size-4">Tour</a>
+                        <a href="contact.html" class="navbar-item  py-5 px-5 is-size-4">Contact Us</a>
+                        
+                        
+    
+                    </div>
+                </div>
+
+
+
+            </nav>
+        </section>
+       
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="is-medium">
+                    <h1 class="has-text-black-bis is-size-1">Contact AboutSelf </h1>
+                    <p class="has-text-black is-size-6">
+                        Thank you for visiting Aboutself! We value your feedback, questions,
+                         and suggestions. If you have any inquiries or would like to get in touch with us, 
+                         please don't hesitate to reach out. Our dedicated team is here to assist you and provide the information you need.
+
+                         You can contact us by filling out the contact form below, 
+                           and we will make sure to respond to your message as soon as possible. 
+                          Alternatively, you can also reach us through email or phone.
+
+                           Our contact details are listed below for your convenience.
+
+                    <p>Email:
+                        <a href="mailto:info@aboutself.com" class="px-3">Send email to info@aboutself.com</a>
+                    </p>
+                    <p>Phone:&#128222; +1-123-456-7890</p>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="columns">
+                <div class="column">
+                    <h2 class="has-text-primary-dark is-size-2">
+                        your <i class="has-text-danger">suggestion</i> has own value!
+                    </h2>
+                    <h4 class="has-text-centered has-text-warning-dark is-size-3">Will you comment me? 
+                        </h4>
+                    <div class="has-text-centered">
+                        <button class="button is-link">Suggestion box</button>
+                    </div>
+                    <div class="has-text-centered">
+                        <form action="/action_page.php" >
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                  <input class="input" type="text" placeholder="Write Name" rows="4">
+                                </div>
+                            </div>
+                              
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                  <input class="input" type="email" placeholder="Write Email eg:aboutself@gmail.com" rows="4">
+                                </div>
+                            </div>
+                              
+                            <div class="field">
+                                 <label for="comment" class="label">CommentLine</label><br>
+                                 <textarea class="textarea" placeholder="leave your comment here!" rows="20"></textarea>
+                            </div>
+                            
+                        </form>
+                        <div class="control">
+                            <button class="button is-primary my-5">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="thumbnail">
+                        <figure class="image"><img src="image/contactPhoto.jpg" alt="beautifu house photo" class="w-100"></figure>
+                    </div>
+                </div>
+            </div>
+        </section> 
         
     </main> <hr>
-    
-    <!-- below this is it's footer -->
-    <footer>
-        <div class="footer">
-            <section>
-                <div>
-                    <h5>Follow us</h5>
-                    <div>           
-                         <p>if you are <strong>interested</strong>  about my history you can <span>contact me</span>  through the following social media links</p>
-                    </div>
-                    <div>
-                        <nav>
-                            <ul>
-                                <li><a href="www.https://facebook.com"  target="_blank" title="facebook browser"> <img src="image/facebook-icon.jpg" alt="facebook icon" class="facebook icon">facebook</a></li>
-                                <li><a href="www.https://linkden.com" target="_blank" title="linkden browser"> <img src="image/linkedin-icon.png" alt="Linkdein icon">linkden</a></li>
-                                <li><a href="www.https://instgram.com" target="_blank" title="instgram browser"><img src="image/instgram-icon.jpg" alt="instgram icon">Instgram</a></li>
-                            
-                            </ul>
-                        </nav>
-                    </div>
-                    <div>
-                        <aside>
-                            <p><span>follow us</span> <br> <span>contact us</span> <br> <span>keep with us </span></p>
-                        </aside>
-                    </div>
-                    </div>
-                    <div>
-                        <a href="https://www.shutterstock.com/image-vector/copyright-symbol-vector-icon-isolated-on-523822222"><img src="image/copyimage.jpg" alt="copy right photo">2023 by AboutSelf</a>
+    <footer class="footer has-background-grey-light has-text-black">
+        <div class="content">
+            <div class="columns">
+                <div class="column ">
+                    
                         
-                    </div>
+                    <a href="about.html" class="text-decoration-none has-text-white is-link is-size-6">About us</a> <br>   
+                        
+                    <a href="contact.html" class="text-decoration-none has-text-white is-link is-size-6">contact us</a> <br>
+                        
+                    <a href="https://www.gmail.com " class="text-decoration-none has-text-white is-link is-size-6">aboutself@gmail.com</a> <br>
+                    
+                </div>
+                <div class="column" id="footer-img">
+                    <a href="https://www.facebook.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank" > 
+                        <img src="image/facebook-icon.jpg" alt="facebook icon" class="is-rounded image is-24x24">
+                        
+                    </a> <br>
+                    <a href="https://www.linkedin.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank">
+                        <img src="image/linkedin-icon.png" alt="Linkdein icon" class="image is-24x24">
+                        
 
-            
-                <div>  
-                <span>copy Right </span>
-               </div>
-     
-            </section>
-        </div>
+                    </a> <br>
+                    <a href="https://www.instgram.com" class="text-decoration-none has-text-white is-link is-size-6" target="_blank">
+                        <img src="image/instgram-icon.jpg" alt="instgram icon" class="is-rounded image is-24x24">
+                        
+                    </a> <br>
+                </div>
+            </div>
+            <div class="has-text-black">
+                <p>We appreciate your interest in Aboutself, and we look forward to hearing from you.
+                    Your feedback plays a vital role in helping us improve our services and cater to your needs better.
+                     Thank you for your support!</p>
+            </div>
+            <div class="row  has-text-centered">
+
+                <span class="has-text-black inline-block">copy Right </span>
+                <a href="contact.html" class="copyright has-text-black ">&#169;
+                    
+                    2023 by AboutSelf</a>
+                    
+                
+            </div>
+        </div>   
     </footer>
+   <script src="script.js"></script>
+   <script src="form.js"></script>
 </body>
 </html>
